@@ -120,6 +120,7 @@ The dataset utilized in this project is derived from the full movie script of *T
 ├── code.py            <- The main Python script containing the KG-RAG implementation.
 ├── plot.txt           <- Movie script (dataset)
 ├── requirements.txt   <- Python dependencies
+├── images             <- folder containing screenshots
 └── .env               <- Environment variables (not committed)
 ```
 
