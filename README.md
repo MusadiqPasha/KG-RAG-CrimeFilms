@@ -18,12 +18,19 @@
 7. [Installation Instructions](#7-installation-instructions)  
 8. [Project Structure](#8-project-structure)  
 9. [Code Workflow](#9-code-workflow)  
-10. [Results and Analysis](#10-results-and-analysis)  
-11. [Limitations and Future Work](#11-limitations-and-future-work)  
-12. [Contributors](#12-contributors)
+10. [Results and Analysis](#10-results-and-analysis)
+11. [Graph Visualization](#11-graph-visualization)
+12. [Limitations and Future Work](#12-limitations-and-future-work)  
+13. [Contributors](#13-contributors)
 
+
+---
 
 ## 3. Introduction
+
+#### System Architecture
+<img src="https://github.com/MusadiqPasha/Knowledge-Graph-Enhanced-RAG-System-for-Crime-Film-Insights-and-Analysis/blob/main/images/architecture.png" width="400" alt="System Architecture"/>
+
 
 Large Language Models (LLMs) have revolutionized Natural Language Processing (NLP) by enabling generative reasoning and sophisticated text generation. However, LLMs often generate hallucinations and require costly retraining to update knowledge Retrieval-Augmented Generation (RAG) has emerged as a promising approach to mitigate these issues by incorporating external knowledge retrieval. This project aims to enhance semantic understanding in movie narratives by integrating structured Knowledge Graphs with RAG. This integration is designed to capture intricate character dynamics, evolving plot arcs, and implicit themes typical in crime films, providing a flexible, context-driven framework for film analysis.
 
@@ -37,11 +44,19 @@ Our KG-RAG system combines:
 - **Vector Retrieval** for semantic understanding
 - **LLM Reasoning** for contextual answer generation
 
+---
+
 ## 4. Problem Statement
 
 Traditional methods for question answering fall short when applied to complex narrative domains like crime films. These approaches struggle to capture the nuanced character dynamics, evolving plot structures, implicit themes, and emotional undertones central to cinematic storytelling. The project addresses these limitations by integrating a structured Knowledge Graph with a Retrieval-Augmented Generation (KG-RAG) framework, enabling richer, context-driven narrative analysis that goes beyond surface-level fact retrieval and supports open-ended, nuanced exploration of film content.
 
+---
+
 ## 5. Proposed Solution / Methodology
+
+#### Workflow
+<img src="https://github.com/MusadiqPasha/Knowledge-Graph-Enhanced-RAG-System-for-Crime-Film-Insights-and-Analysis/blob/main/images/workflow.png" width="400" alt="Workflow"/>
+
 
 Our project employs a Knowledge Graph-Retrieval Augmented Generation (KG-RAG) system. This approach is specifically designed to enhance how we can ask questions about and understand the intricate details within crime movies. It works by combining the strengths of two powerful techniques: Knowledge Graphs and Retrieval-Augmented Generation. Let's break down the steps involved:
 
@@ -62,7 +77,13 @@ Our project employs a Knowledge Graph-Retrieval Augmented Generation (KG-RAG) sy
 
 In summary, our KG-RAG system aims to provide a deeper level of understanding and more insightful answers when analyzing crime films by intelligently integrating structured knowledge with relevant textual context and leveraging the reasoning capabilities of Large Language Models.
 
+---
+
 ## 6. Dataset
+
+#### Sample Dataset
+<img src="https://github.com/MusadiqPasha/Knowledge-Graph-Enhanced-RAG-System-for-Crime-Film-Insights-and-Analysis/blob/main/images/sample-dataset.png" width="400" alt="Sample Dataset"/>
+
 
 The dataset utilized in this project is derived from the full movie script of *The Godfather Part I*.
 
@@ -82,8 +103,14 @@ The dataset utilized in this project is derived from the full movie script of *T
     ```
 
 -   **Access:** The annotated dataset is publicly available on [Zenodo](https://zenodo.org/records/14894805).
-  
+
+---
+
 ## 7. Installation Instructions
+
+#### LLM Configuration
+<img src="https://github.com/MusadiqPasha/Knowledge-Graph-Enhanced-RAG-System-for-Crime-Film-Insights-and-Analysis/blob/main/images/LLM%20Config.png" width="400" alt="LLM Configuration"/>
+
 
 1.  **Clone the repository:**
     ```bash
@@ -113,6 +140,8 @@ The dataset utilized in this project is derived from the full movie script of *T
     python code.py  # or however you execute the script
     ```
 
+---
+
 ## 8. Project Structure
 ```
 ├── README.md          <- This file
@@ -123,6 +152,7 @@ The dataset utilized in this project is derived from the full movie script of *T
 ├── images             <- folder containing screenshots
 └── .env               <- Environment variables (not committed)
 ```
+---
 
 ## 9. Code Workflow
 
@@ -136,11 +166,20 @@ The dataset utilized in this project is derived from the full movie script of *T
 8.  **RAG Pipeline:** The RAG pipeline is set up to retrieve relevant context and generate answers using the LLM.
 9.  **Evaluation:** The system's performance is evaluated using predefined metrics.
 
+---
+
 ## 10. Results and Analysis
+
+<img src="https://github.com/MusadiqPasha/Knowledge-Graph-Enhanced-RAG-System-for-Crime-Film-Insights-and-Analysis/blob/main/images/Results.png" width="400" alt="Results"/>
+
 
 The evaluation was carried out on 50 queries across several categories, including Factual Analysis, Inferential, Comparative and Relational, Causal and Temporal, and Dialogue Analysis. The KG-RAG system demonstrates strengths in hybrid retrieval power, effectiveness on complex queries, and hallucination mitigation.  Specific metrics and detailed analysis can be found in the research paper and presentation.
 
-## 11.Graph Visualization
+---
+
+## 11. Graph Visualization
+
+<img src="https://github.com/MusadiqPasha/Knowledge-Graph-Enhanced-RAG-System-for-Crime-Film-Insights-and-Analysis/blob/main/images/Graph%20Viz.png" width="400" alt="Graph Visualization"/>
 
 You can visualize the graph present in the `images` folder using the [yEd Live](https://www.yworks.com/yed-live/) website.
 
@@ -148,6 +187,7 @@ Alternatively, experience it live by clicking the link below:
 
 👉 [View Graph Live on yEd](https://www.yworks.com/yed-live/?file=https://gist.githubusercontent.com/MusadiqPasha/783e702c4055dee3e6cd62427b28a6be/raw/488ecfbe31008744317604cfdc94820f1acff12c/viz)
 
+---
 
 ## 12. Limitations and Future Work
 
@@ -155,10 +195,15 @@ Alternatively, experience it live by clicking the link below:
 -   Broader application testing across different film genres.
 -   Addressing challenges in handling highly ambiguous queries.
 -   Exploring more advanced graph analysis techniques.
-
+  
+---
 ## 13. Contributors
 
--   K Musadiq Pasha 
--   Tejas V Bhat 
--   K Bhavish Raju 
--   Ayush Muralidharan 
+- [K Musadiq Pasha](https://github.com/MusadiqPasha)
+- [Tejas V Bhat](https://github.com/)
+- [K Bhavish Raju](https://github.com/Bhavish1517)
+- [Ayush Muralidharan](https://github.com/)
+
+---
+## If you found this useful, drop a ⭐️ on the repo!
+
