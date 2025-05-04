@@ -140,14 +140,23 @@ The dataset utilized in this project is derived from the full movie script of *T
 
 The evaluation was carried out on 50 queries across several categories, including Factual Analysis, Inferential, Comparative and Relational, Causal and Temporal, and Dialogue Analysis. The KG-RAG system demonstrates strengths in hybrid retrieval power, effectiveness on complex queries, and hallucination mitigation.  Specific metrics and detailed analysis can be found in the research paper and presentation.
 
-## 11. Limitations and Future Work
+## 11.Graph Visualization
+
+You can visualize the graph present in the `images` folder using the [yEd Live](https://www.yworks.com/yed-live/) website.
+
+Alternatively, experience it live by clicking the link below:
+
+👉 [View Graph Live on yEd](https://www.yworks.com/yed-live/?file=https://gist.githubusercontent.com/MusadiqPasha/783e702c4055dee3e6cd62427b28a6be/raw/488ecfbe31008744317604cfdc94820f1acff12c/viz)
+
+
+## 12. Limitations and Future Work
 
 -   Further improvement in retrieval mechanisms.
 -   Broader application testing across different film genres.
 -   Addressing challenges in handling highly ambiguous queries.
 -   Exploring more advanced graph analysis techniques.
 
-## 12. Contributors
+## 13. Contributors
 
 -   K Musadiq Pasha 
 -   Tejas V Bhat 
