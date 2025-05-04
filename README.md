@@ -4,24 +4,24 @@
 
 **Project Title:** Knowledge Graph-Enhanced RAG System for Crime Film Insights and Analysis
 
-**Abstract:** This project introduces a Knowledge Graph and Retrieval-Augmented Generation (KG-RAG) system designed for question answering (QA) in crime movies[cite: 258, 259]. By applying KG-RAG to crime film scripts, the system enables in-depth understanding of crime cinema, supporting nuanced, open-ended, and non-factual questioning beyond simple fact retrieval[cite: 258, 259, 260]. The system integrates structured knowledge graphs with advanced generative retrieval techniques to provide a framework for rich, context-driven film analysis[cite: 262, 263].
+**Abstract:** This project introduces a Knowledge Graph and Retrieval-Augmented Generation (KG-RAG) system designed for question answering (QA) in crime movies. By applying KG-RAG to crime film scripts, the system enables in-depth understanding of crime cinema, supporting nuanced, open-ended, and non-factual questioning beyond simple fact retrieval. The system integrates structured knowledge graphs with advanced generative retrieval techniques to provide a framework for rich, context-driven film analysis.
 
 
 ## 2. Table of Contents
 
-- 1.  [Project Title and Abstract](#1-project-title-and-abstract)
-- 2.  [Table of Contents](#2-table-of-contents)
-- 3.  [Introduction](#3-introduction)
-- 4.  [Problem Statement](#4-problem-statement)
-- 5.  [Proposed Solution / Methodology](#5-proposed-solution--methodology)
-- 6.  [Technologies & Libraries Used](#6-technologies--libraries-used)
-- 7.  [Dataset](#7-dataset-if-any)
-- 8.  [Installation Instructions](#8-installation-instructions)
-- 9.  [Project Structure](#9-project-structure)
-- 10. [Code Workflow](#10-code-workflow)
-- 11. [Results and Analysis](#11-results-and-analysis)
-- 12. [Limitations and Future Work](#12-limitations-and-future-work)
-- 13. [Contributors](#13-contributors)
+1. [Project Title and Abstract](#1-project-title-and-abstract)  
+2. [Table of Contents](#2-table-of-contents)  
+3. [Introduction](#3-introduction)  
+4. [Problem Statement](#4-problem-statement)  
+5. [Proposed Solution / Methodology](#5-proposed-solution--methodology)  
+6. [Dataset](#6-dataset-if-any)  
+7. [Installation Instructions](#7-installation-instructions)  
+8. [Project Structure](#8-project-structure)  
+9. [Code Workflow](#9-code-workflow)  
+10. [Results and Analysis](#10-results-and-analysis)  
+11. [Limitations and Future Work](#11-limitations-and-future-work)  
+12. [Contributors](#12-contributors)
+
 
 ## 3. Introduction
 
@@ -36,10 +36,10 @@ Our KG-RAG system combines:
 - **Knowledge Graphs** for structured relationship mapping
 - **Vector Retrieval** for semantic understanding
 - **LLM Reasoning** for contextual answer generation
-- 
+
 ## 4. Problem Statement
 
-Traditional methods for question answering fall short when applied to complex narrative domains like crime films[cite: 51, 52]. These approaches struggle to capture the nuanced character dynamics, evolving plot structures, implicit themes, and emotional undertones central to cinematic storytelling[cite: 9, 10, 11]. The project addresses these limitations by integrating a structured Knowledge Graph with a Retrieval-Augmented Generation (KG-RAG) framework, enabling richer, context-driven narrative analysis that goes beyond surface-level fact retrieval and supports open-ended, nuanced exploration of film content[cite: 53, 272, 273, 274, 275, 276].
+Traditional methods for question answering fall short when applied to complex narrative domains like crime films. These approaches struggle to capture the nuanced character dynamics, evolving plot structures, implicit themes, and emotional undertones central to cinematic storytelling. The project addresses these limitations by integrating a structured Knowledge Graph with a Retrieval-Augmented Generation (KG-RAG) framework, enabling richer, context-driven narrative analysis that goes beyond surface-level fact retrieval and supports open-ended, nuanced exploration of film content.
 
 ## 5. Proposed Solution / Methodology
 
@@ -62,23 +62,7 @@ Our project employs a Knowledge Graph-Retrieval Augmented Generation (KG-RAG) sy
 
 In summary, our KG-RAG system aims to provide a deeper level of understanding and more insightful answers when analyzing crime films by intelligently integrating structured knowledge with relevant textual context and leveraging the reasoning capabilities of Large Language Models.
 
-## 6. Technologies & Libraries Used
-
--   LangChain
--   LangChain Community
--   LangChain Ollama
--   LangChain Experimental
--   Neo4j
--   tiktoken
--   python-dotenv
--   json-repair
--   LangChain OpenAI
--   LangChain Core
--   Ollama
--   Mixedbread AI
--   Sentence Transformers
-
-## 7. Dataset
+## 6. Dataset
 
 The dataset utilized in this project is derived from the full movie script of *The Godfather Part I*.
 
@@ -99,7 +83,7 @@ The dataset utilized in this project is derived from the full movie script of *T
 
 -   **Access:** The annotated dataset is publicly available on [Zenodo](https://zenodo.org/records/14894805).
   
-## 8. Installation Instructions
+## 7. Installation Instructions
 
 1.  **Clone the repository:**
     ```bash
@@ -129,16 +113,17 @@ The dataset utilized in this project is derived from the full movie script of *T
     python code.py  # or however you execute the script
     ```
 
-## 9. Project Structure
+## 8. Project Structure
 ```
 ├── README.md          <- This file
+├── code.ipynb         <- The main Python Notebpok containing the KG-RAG implementation.
 ├── code.py            <- The main Python script containing the KG-RAG implementation.
 ├── plot.txt           <- Movie script (dataset)
 ├── requirements.txt   <- Python dependencies
 └── .env               <- Environment variables (not committed)
 ```
 
-## 10. Code Workflow
+## 9. Code Workflow
 
 1.  **Load and Split Documents:** The movie script is loaded and split into smaller chunks.
 2.  **Initialize LLM and Graph Transformer:** A Large Language Model (LLM) and a graph transformer are initialized.
@@ -150,20 +135,20 @@ The dataset utilized in this project is derived from the full movie script of *T
 8.  **RAG Pipeline:** The RAG pipeline is set up to retrieve relevant context and generate answers using the LLM.
 9.  **Evaluation:** The system's performance is evaluated using predefined metrics.
 
-## 11. Results and Analysis
+## 10. Results and Analysis
 
 The evaluation was carried out on 50 queries across several categories, including Factual Analysis, Inferential, Comparative and Relational, Causal and Temporal, and Dialogue Analysis. The KG-RAG system demonstrates strengths in hybrid retrieval power, effectiveness on complex queries, and hallucination mitigation.  Specific metrics and detailed analysis can be found in the research paper and presentation.
 
-## 12. Limitations and Future Work
+## 11. Limitations and Future Work
 
 -   Further improvement in retrieval mechanisms.
 -   Broader application testing across different film genres.
 -   Addressing challenges in handling highly ambiguous queries.
 -   Exploring more advanced graph analysis techniques.
 
-## 13. Contributors
+## 12. Contributors
 
--   K Musadiq Pasha [cite: 1, 255]
--   Tejas V Bhat [cite: 1, 255]
--   K Bhavish Raju [cite: 1, 255]
--   Ayush Muralidharan [cite: 1, 255]
+-   K Musadiq Pasha 
+-   Tejas V Bhat 
+-   K Bhavish Raju 
+-   Ayush Muralidharan 
