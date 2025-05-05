@@ -199,9 +199,9 @@ Alternatively, experience it live by clicking the link below:
 ---
 ## 13. Contributors
 
-- [Tejas V Bhat](https://github.com/)
+- [Tejas V Bhat](https://github.com/tej2612)
 - [K Bhavish Raju](https://github.com/Bhavish1517)
-- [Ayush Muralidharan](https://github.com/)
+- [Ayush Muralidharan](https://github.com/AyushMuralidharan)
 
 ---
 ## If you found this useful, drop a ⭐️ on the repo!
